@@ -1,2 +1,0 @@
-diff --git a/three_doors.txt b/three_doors.txt
-index fc1c68d..8c6dd84 100644

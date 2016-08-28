@@ -20,8 +20,9 @@ class Graphical_Movie_Rating
     end
 
     def print movie, index
-        puts "#{index}. #{movie.title}"
+       
         puts movie.graphical_rating
+        puts "#{index}. #{movie.title}"
     end
 end
 
@@ -40,4 +41,3 @@ gmr.search_movie
 
 
 
-victor.fernandez.calvo@gmail.com
