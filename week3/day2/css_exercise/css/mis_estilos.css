@@ -1,0 +1,63 @@
+header {
+	background:#2c3e50 ;
+	color :#fff ;
+
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	background:#f2f2f2;
+}
+
+a{
+	color :blue;
+}
+
+img.little{
+  width: 50px; height: 50px;
+}
+.money{
+	color: #DCBB30;
+	padding-right: 1%; 
+}
+.plus{
+	color: red;
+}
+
+.h-divider{
+ margin-top:5px;
+ margin-bottom:5px;
+ height:1px;
+ width:100%;
+ border-top:1px solid gray;
+}
+
+.main {
+	padding: 0.5%;
+}
+
+.color1 {
+	background:#34495e ;
+	color:#f2f2f2;
+}
+.circle-button {
+	border: .2em solid blue;
+	color: blue;
+	background-color: #f2f2f2;
+	margin: auto;
+	border-radius: 10%;
+	height: 3em;
+	width: 7em;
+	position: relative;
+}
+
+aside {
+	background:#fff;
+
+}
+
+footer {
+	background:#16a085;
+	color:#fff;
+}
+
+

@@ -1,0 +1,12 @@
+
+<ul>
+ <% @posts.each do |x| %>
+<li> <%= x.title %> </li>
+<% end %>
+</ul>
+
+<form action="/post_details" method="POST">
+<input type="text" name="name" placeholder="type title">
+
+<button type="submit" name="action" value="add" >SEE CONTENT</button>
+</form>

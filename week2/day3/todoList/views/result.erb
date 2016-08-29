@@ -1,0 +1,11 @@
+`
+<ul>
+ <% @show_tasks.each do |x| %>
+<li> <%= x.content %> </li>
+<% end %>
+</ul>
+
+<form action="/task" method="GET">
+<button type="submit" name="new_task" value="see">SEE ALL MY TASKS</button>
+<button type="submit" name="action" value="complete">COMPLETE TASK</button>
+</form>

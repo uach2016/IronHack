@@ -1,0 +1,15 @@
+<h1>Welcome to TODOLIST</h1>
+
+
+<form action="/result" method="POST">
+<input type="text" name="content_task" placeholder="Type your Task or ID to delete">
+<button type="submit" name="action" value="add">ADD TASK</button>
+<button type="submit" name="action" value="delete">DELETE TASK</button>
+</form>
+
+<ul>
+ <% @show_tasks.each do |x| %>
+<li> <%= x.content %> - <%= x.id %></li>
+<% end %>
+</ul
+
