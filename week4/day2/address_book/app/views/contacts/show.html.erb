@@ -1,0 +1,13 @@
+<h4>Conctact info</h4>
+
+
+<p>Name: <%= @contact.name %></p>
+<p>Address: <%= @contact.address %></p>
+<p>Phone Number: <%= @contact.phone_number %></p>
+<p>Email: <%= @contact.email %></p>
+
+<form action="/make_favorite" method="POST">
+	<input type="hidden" name="id" value="<%= @contact.id %>">
+	<button type="submit">Add as favorite</button>
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</form>

@@ -1,0 +1,17 @@
+
+<% if @twat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@twat.errors.count, "error") %> prohibited this twat from being saved:</h2>
+
+      <ul>
+      <% @twat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<%= form_for(@twat, url: '/projects/create')  do |f| %>
+  Body: <%= f.text_field :body%>
+  <%= f.submit %>
+<% end %>

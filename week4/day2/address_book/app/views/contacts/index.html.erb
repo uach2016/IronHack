@@ -1,0 +1,24 @@
+<h1>All Contacts</h1>
+<ul>
+<% @contacts.each do |contact| %>
+<li> <a href="/contacts/<%= contact.id %>"><%= contact.name %></a></li>
+<% end %>
+<ul>
+
+
+
+<h1>Add a new contact</h1>
+<p><a href="/favorite_contacts">List of favorite contacts</a></p>
+
+
+<form action="/contacts/new" method="GET">
+  	<button type="submit">Add this contact</button>
+</form>
+
+<form action="/search" method="POST">
+	<label>Enter letter to search by:</label>
+	<input type="text" name="letter">
+	<button type="submit">Search</button>
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</form>
+
