@@ -1,0 +1,14 @@
+{
+    featureType: 'road',
+    stylers: [
+          { saturation: 68 },
+          { hue: "#ff00ee" }
+    ]
+}
+
+{
+    elementType: 'labels',
+    stylers: [ { visibility: 'off' } ]
+}
+
+//icon: "http://goo.gl/TQpwU"--->>>icono para cambiar el marquer de google
